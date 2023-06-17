@@ -6,4 +6,14 @@ print("\n".join(wrap(str, 15)))
 
 # Question 2: Please find the frequency of each charactor in a given string
 # Answer :
+str = "Hello we are using python"
+str_upper = str.upper()
+freq = {}
+for char in str_upper:
+    if char in freq:
+        freq[char] = freq[char]+1
+    else:
+        freq[char] = 1
+print(freq)
+
 
